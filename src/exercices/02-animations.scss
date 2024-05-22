@@ -7,6 +7,21 @@
     border-radius: 5px;
     color: #003566;
     box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    animation: box-shadow 2s infinite;
+  }
+
+  @keyframes box-shadow {
+    0% {
+      scale: 1;
+    }
+
+    50% {
+      scale: 1.2;
+    }
+
+    to {
+      scale: 1;
+    }
   }
 
   .loader {
@@ -18,5 +33,31 @@
     background: #ffbe0b;
     border-radius: 50px;
     color: #fff;
+  }
+
+  .loader {
+    animation: changeColor 10s infinite;
+  }
+
+  @keyframes changeColor {
+    0% {
+      background: yellow;
+    }
+
+    15% {
+      background: orange;
+    }
+
+    40% {
+      background: fuchsia;
+    }
+
+    60% {
+      background: blueviolet;
+    }
+
+    to {
+      background: burlywood;
+    }
   }
 }
